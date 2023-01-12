@@ -32,7 +32,7 @@ document.getElementById("form-login").addEventListener("submit", function(event)
 
     if(encontrado){
         alert("Usuario autenticado.");
-        location.href= "../ProyectoEcommerceSegundaEtapa/index.html";
+        location.href= "../index.html";
     }else{
         alert("Datos incorrectos.");
     }
