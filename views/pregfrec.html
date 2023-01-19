@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito</title>
-    <script src="./assets/js/script.js"></script>
-    <link rel="stylesheet" href="./assets/css/style.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preguntas frecuentes</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -20,11 +20,10 @@
     ></script>
     
     <script src="https://kit.fontawesome.com/1e881725e3.js" crossorigin="anonymous"></script>
+   
+    
   </head>
-  
-</head>
-<body>
-
+  <body>    
     <div class="overlay"></div>
  
     <div class="utility-nav d-none d-md-block">
@@ -61,9 +60,9 @@
           <i class="bx bx-menu icon-single"></i>
         </button>
 
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="../index.html">
           <h4 class="font-weight-bold">
-            <img class="logonav w-75" src="./assets/img/logonav.JPG" />
+            <img class="logonav w-75" src="../assets/img/logonav.JPG" />
           </h4>
         </a>
 
@@ -75,110 +74,325 @@
               </form>
             </div>
           </nav>
+        
+        <div>
 
-          <div>
-
-            <ul class="navbar-nav">
-          
-              <li class="nav-item ml-md-3">
-                <a class="btn btn-primary" href="#"
-                  ><i class="bx bxs-user-circle mr-1"></i>
-                  <i class="fa-solid fa-user">
-                   </i>Mi cuenta</a
-                >
-                
-              </li>
-            </ul>
-          </div>
+          <ul class="navbar-nav">
+        
+            <li class="nav-item ml-md-3">
+              <a class="btn btn-primary" href="../views/login.html"
+                ><i class="bx bxs-user-circle mr-1"></i>
+                <i class="fa-solid fa-user">
+                 </i>Mi cuenta</a
+              >
+              
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
 
-      <nav class="navbar navbar-expand-md navbar-light bg-light sub-menu">
-        <div class="container">
-          <div class="collapse navbar-collapse" id="navbar">
-            <ul class="navbar-nav mx-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#"
-                  >PokeHome <span class="sr-only"></span
-                ></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Juegos y consolas</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Accesorios</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Figuras y juguetes</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Soporte
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Información de envíos</a>
-                  <a class="dropdown-item" href="#">Políticas de privacidad</a>
-                  <a class="dropdown-item" href="#">Términos y condiciones</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
-              </li>
-            </ul>
-            <li class="nav-item">
-              <a class="btn btn-link" href="favs.html">
-                  <i class="fa-sharp fa-solid fa-heart"> Favoritos</i>
-                
-              </a>
+    <nav class="navbar navbar-expand-md navbar-light bg-light sub-menu">
+      <div class="container">
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="../index.html"
+                >PokeHome <span class="sr-only"></span
+              ></a>
             </li>
             <li class="nav-item">
-              <a class="btn btn-link" href="cart.html">
-                  <i class="fa fa-shopping-cart"> Mi carrito</i>
-               
-              </a>
+              <a class="nav-link" href="#">Juegos y consolas</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Accesorios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Figuras y juguetes</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Soporte
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Información de envíos</a>
+                <a class="dropdown-item" href="#">Políticas de privacidad</a>
+                <a class="dropdown-item" href="#">Términos y condiciones</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
+
+          <!--favoritos-->
+          <li class="nav">
+            <a class="btn btn-link" style="color:pink" href="../views/favoritos.html">
+                <i class="fa-sharp fa-solid fa-heart"></i>
+              
+            </a>
+          </li>
+
+          <!--Carrito-->
+
+                <li class="nav submenu">
+                  <a class="nav-link" style="color:rgb(143, 143, 143)" href="../views/cart.html"
+                    ><i class="fa-solid fa-cart-shopping"></i
+                  ></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="cantidad-productos">0</a>
+                </li>
+
+          <!--termino carrito-->
+                      
+                    </div> 
+             
+            </a>
+          </li>
+        </div>
+      </div>
+    </nav>
+
+    <div class="search-bar d-block d-md-none">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <form class="form-inline mb-3 mx-auto">
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Search for products..."
+                aria-label="Search"
+              />
+              <button class="btn btn-success" type="submit">
+                <i class="bx bx-search"></i>
+              </button>
+            </form>
           </div>
         </div>
-      </nav>
-  
-      <div class="search-bar d-block d-md-none">
+      </div>
+    </div>
+
+    <!-- Sidebar -->
+    <nav id="sidebar">
+      <div class="sidebar-header">
         <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <form class="form-inline mb-3 mx-auto">
-                <input
-                  class="form-control"
-                  type="search"
-                  placeholder="Search for products..."
-                  aria-label="Search"
-                />
-                <button class="btn btn-success" type="submit">
-                  <i class="bx bx-search"></i>
-                </button>
-              </form>
+          <div class="row align-items-center">
+            <div class="col-10 pl-0">
+              <a class="btn btn-primary" href="#"
+                ><i class="bx bxs-user-circle mr-1"></i>Log In</a
+              >
+            </div>
+
+            <div class="col-2 text-left">
+              <button type="button" id="sidebarCollapseX" class="btn btn-link">
+                <i class="bx bx-x icon-single"></i>
+              </button>
             </div>
           </div>
         </div>
       </div>
 
-      
-      <p>1. Disponibilidad de productos</p>
-      <p>¿Cómo puedo ver la disponibilidad de un producto?
-        En todas las fichas de nuestros productos encontraras una opción que dice "VER DISPONIBILIDAD EN TIENDAS"</p>
-        <img
-        src="./assets/img/disponibilidad.png"
-        class="d-block w-50"
-        alt="imagen1"
-      />
+      <ul class="list-unstyled components links">
+        <li class="active">
+          <a href="#"><i class="bx bx-home mr-3"></i> PokeHome</a>
+        </li>
+        <li>
+          <a href="#"><i class="bx bx-carousel mr-3"></i>Juegos y consolas</a>
+        </li>
+        <li>
+          <a href="#"><i class="bx bx-book-open mr-3"></i>Accesorios</a>
+        </li>
+        <li>
+          <a href="#"><i class="bx bx-crown mr-3"></i>Figuras y juguetes</a>
+        </li>
+        <li>
+          <a
+            href="#pageSubmenu"
+            data-toggle="collapse"
+            aria-expanded="false"
+            class="dropdown-toggle"
+            ><i class="bx bx-help-circle mr-3"></i> Soporte</a
+          >
+          <ul class="collapse list-unstyled" id="pageSubmenu">
+            <li>
+              <a href="#">Información de envíos</a>
+            </li>
+            <li>
+              <a href="#">Políticas de privacidad</a>
+            </li>
+            <li>
+              <a href="#">Terminos y condiciones</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><i class="bx bx-phone mr-3"></i> Contacto</a>
+        </li>
+      </ul>
+
+      <h6 class="text-uppercase mb-1">Categorias</h6>
+      <ul class="list-unstyled components mb-3">
+        <li>
+          <a href="#">Juegos</a>
+        </li>
+        <li>
+          <a href="#">Consolas</a>
+        </li>
+        <li>
+          <a href="#">Accesorios</a>
+        </li>
+        <li>
+          <a href="#">Figuras</a>
+        </li>
+        <li>
+          <a href="#">Juguetes</a>
+        </li>
+      </ul>
+
+      <ul class="social-icons">
+        <li>
+          <a href="#" target="_blank" title=""
+            ><i class="bx bxl-facebook-square"></i
+          ></a>
+        </li>
+        <li>
+          <a href="#" target="_blank" title=""
+            ><i class="bx bxl-twitter"></i
+          ></a>
+        </li>
+        <li>
+          <a href="#" target="_blank" title=""
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+        </li>
+        <li>
+          <a href="#" target="_blank" title=""
+            ><i class="bx bxl-instagram"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="container">
+      <section>
+        <h3 class="text-center my-5">Preguntas frecuentes</h3>
+        <p>1. Retiros en tienda</p>
+      <p>¿Cuándo puedo ir a buscar mi producto si compro con retiro en tienda?
+        Debes esperar recibir un email que confirma que ya puedes retirar tu compra.Si tienes dificultades con ir a retirar tu pedido, puedes solicitar que una tercera persona realice el retiro, para esto, debes indicarnos el nombre y rut de quien realizará el retiro a través del correo contacto@pokeplay.com.</p>
+       
+        <p>2. Problemas con mi cuenta</p>
+      <p>Si tu problema se trata de recuperar contraseña, te enviaremos un link a tu correo con el que podrás ingresar nuevamente, debes revisar tu bandeja de Spam, ya que en ocasiones suelen caer en esa carpeta. Si tienes algún otro problema con respecto a tu cuenta, por favor contáctate con nuestro servicio al cliente a través del correo contacto@pokeplay.com, donde con gusto te ayudaremos a solucionarlo.</p>
+       
+      <p>3. Devoluciones y anulaciones</p>
+      <p>
+        Para productos comprados en el sitio web la garantía legal de la Ley 19.496, para que el cliente pueda exigir la devolución del precio; cambio del producto o su reparación, el cliente deberá cumplir con los siguientes requisitos:
+
+        Presentar y/o contar con su boleta o factura de compra;
+        El producto debe contar con su empaque original; con los sellos originales del mismo y sus sellos de garantía intactos (no violados), y en perfectas condiciones. NO se aceptarán productos dañados o con sus cajas en mal estado, rotas o abolladas;
+        En el caso particular de todos los artículos eléctricos que utilicen baterías recargables y/o conectables (consolas, controles, mouses, periféricos, teclados, cámaras, audífonos, etc.), previo la devolución del precio; reemplazo o reparación, deberán ser estos revisados por el servicio técnico respectivo para evaluar su funcionamiento en perfecto estado, situación que puede demorar hasta 10 días hábiles;
+        El producto debe presentar una falla de fabrica que lo haga inapto para el uso que le es propio, y
+        El cliente debe hacer valer esta garantía en el plazo legal, a saber, dentro de los tres meses contados desde la compra o la recepción el producto en cuestión.    
+        En este caso, la garantía legal se debe solicitar a través de servicio al cliente respetando el procedimiento ya previamente detallado, y para ello deberá enviar un correo a contacto@pokeplay.com licen baterías recargables y/o conectables (consolas, controles, mouses, periféricos, teclados, cámaras, audífonos, etc.), previo la devolución del precio; reemplazo o reparación, deberán ser estos revisados por el servicio técnico respectivo para evaluar su funcionamiento en perfecto estado, situación que puede demorar hasta 10 días hábiles;
+        El producto debe presentar una falla de fabrica que lo haga inapto para el uso que le es propio, y
+        Explicar detalladamente cuáles son las fallas que presenta éste.    
+        Acto seguido, nuestro Servicio al Cliente -por la misma vía- le indicará los pasos a seguir. Desde que Pokeplay no cuenta con Garantía de Satisfacción respecto de los productos que vende NO se realizará cambio ni devolución de ningún producto por:
+        
+        Disconformidad o si sencillamente el producto no satisface las exigencias y/o expectativas del comprador.
+        Que se encuentre con embalaje incompleto y/o en mal estado.
+        Que presente sus sellos de garantía violados.   
+      </p>  
+      </section>
+    </main>
+
     
+    <section>
+
+          <!--comienzo pie-->
+          <div class="row alert alert-secondary min-5">
+        
+            <div class="col"><img class="logofooter" src="../assets/img/logofooter2.png" alt="imagen2" /></div>
+            
+            
+            <div class="col">
+                <div class="card">
+                    <div class="card text-bg-info mb-3 border border-primary">
+                        HORARIO DE ATENCIÓN
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Lunes a Viernes:</li>
+                      <li class="list-group-item">De 08:00 AM a 17:30</li>
+                      <li class="list-group-item">Email: contacto@pokeplay.cl</li>
+                    </ul>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card text-bg-info mb-3 border border-primary">
+                        CONTACTO
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">223621200 (desde Santiago)</li>
+                      <li class="list-group-item">446901030 (desde Todo Chile)</li>
+                      <li class="list-group-item">200600232 ATC</li>
+                    </ul>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card text-bg-info mb-3 border border-primary">
+                        CORPORATIVO
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <a href="/views/pregfrec.html"><li class="list-group-item">Preguntas Frecuentes</li></a>
+                      <a href="/views/cookies.html"><li class="list-group-item">Política de cookies</li></a>
+                      <a href="/views/acercade.html"><li class="list-group-item">Acerca de Nosotros</li></a>
+                    </ul>
+                  </div>
+            </div>
+          </div>
     
-</body>
+            </div>
+    
+        <!--termino footer-->
+          <!--termino pie-->
+    </section>
+    <section>
+        <!--comienzo footer2-->
+
+    <footer>
+        © 2022 Desarrollado y creado por Mariela Ochoa Hutinel. Todos los derechos
+        reservados.
+      </footer>
+  
+      <!--Fin footer-->
+    </section>
+
+
+    <script
+    src="https://kit.fontawesome.com/4555f38c69.js"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"
+  ></script>
+<!-- 
+    <script src="../assets/js/productos.js"></script>
+    <script src="../assets/js/index.js"></script> -->
+    <script src="../assets/js/login.js"></script>
+    
+  </body>
 </html>
+
+
