@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
+    <title>Productos</title>
     <link rel="stylesheet" href="../assets/css/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <link
@@ -18,12 +18,18 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.6.16/sweetalert2.min.css" integrity="sha512-NvuRGlPf6cHpxQqBGnPe7fPoACpyrjhlSNeXVUY7BZAj1nNhuNpRBq3osC4yr2vswUEuHq2HtCsY2vfLNCndYA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://kit.fontawesome.com/1e881725e3.js" crossorigin="anonymous"></script>
+    <!-- <script type="text/html" src="sweetalert2.min.js"></script> -->
+    <!-- <link type="text/html" rel="stylesheet" href="sweetalert2.min.css"> -->
    
     
   </head>
-  <body>    
+  
+
+  <body>
+
+    
     <div class="overlay"></div>
  
     <div class="utility-nav d-none d-md-block">
@@ -32,7 +38,7 @@
           <div class="col-12 col-md-6">
             <p class="small">
               <i class="bx bx-envelope"></i> contacto@pokeplay.com |
-              <i class="bx bx-phone"></i> +91-9876543210
+              <i class="bx bx-phone"></i> +81-9876543210
             </p>
           </div>
 
@@ -98,39 +104,14 @@
           <ul class="navbar-nav mx-auto">
             <li class="nav-item active">
               <a class="nav-link" href="../index.html"
-                >PokeHome <span class="sr-only"></span
+                >PokeHome<span class="sr-only"></span
               ></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Juegos y consolas</a>
+              <a class="nav-link" href="../views/productos.html">Productos</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Accesorios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Figuras y juguetes</a>
-            </li>
+            
             <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Soporte
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Información de envíos</a>
-                <a class="dropdown-item" href="#">Políticas de privacidad</a>
-                <a class="dropdown-item" href="#">Términos y condiciones</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contacto</a>
-            </li>
           </ul>
 
           <!--favoritos-->
@@ -144,15 +125,10 @@
           <!--Carrito-->
 
                 <li class="nav submenu">
-                  <a class="nav-link" style="color:rgb(143, 143, 143)" href="../views/cart.html"
-                    ><i class="fa-solid fa-cart-shopping"></i
-                  ></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="cantidad-productos">0</a>
+                  <a class="nav-link" style="color:rgb(143, 143, 143)" href="../views/cart.html" id="cantidad-productos"> <i class="fa-solid fa-cart-shopping">
+                  </i> 0</a>
                 </li>
 
-          <!--termino carrito-->
                       
                     </div> 
              
@@ -204,18 +180,13 @@
 
       <ul class="list-unstyled components links">
         <li class="active">
-          <a href="#"><i class="bx bx-home mr-3"></i> PokeHome</a>
+          <a href="../index.html"><i class="bx bx-home mr-3"></i> PokeHome</a>
         </li>
         <li>
-          <a href="#"><i class="bx bx-carousel mr-3"></i>Juegos y consolas</a>
+          <a href="#"><i class="bx bx-carousel mr-3"></i>Juegos</a>
         </li>
         <li>
-          <a href="#"><i class="bx bx-book-open mr-3"></i>Accesorios</a>
-        </li>
-        <li>
-          <a href="#"><i class="bx bx-crown mr-3"></i>Figuras y juguetes</a>
-        </li>
-        <li>
+        
           <a
             href="#pageSubmenu"
             data-toggle="collapse"
@@ -282,24 +253,46 @@
         </li>
       </ul>
     </nav>
+    
+    <!--COMIENZO PRODUCTOS-->
 
-    <main class="container">
-      <section id="login">
-        <h3 class="text-center my-5">Login de usuario</h3>
+    <!-- creamos un solo contenedor con bootstrap para aside y mostrar productos -->
+    <div class="container">
+      <!-- le indicamos que este debe ser mostrado en fila -->
+      <div class="row">
+        <!-- asignamos con col-2 el espacio que tendra el aside -->
+        <div class="col-2 tex-center">
+          <h3>Tienda</h3>
+          <img id="portada" src="../assets/img/aside.png" />
+      
+          
+          <div>
+            <button class="btn btn-info">Leer más</button>
+          </div>
 
-        <section>
-            <form id="form-login">
-                <label for="nombre" class="form-label">Nombre</label>
-                <input type="text" name="nombre" id="login-nombre" class="form-control my-1">
-                <label for="password" class="form-label">password</label>
-                <input type="password" name="password" id="login-password" class="form-control my-1" >
-                <button type="submit" class="btn btn-primary">Loguear</button>
-                <button type="reset" class="btn btn-warning">Limpiar</button>
-            </form>
-        </section>
-      </section>
-    </main>
+      </br>
 
+          <img id="portada" src="../assets/img/publizq.png" />
+      
+          <div>
+              <button class="btn btn-info">Leer más</button>
+            </div>
+
+        </div>
+        <!-- asignamos con col-10 el espacio que tendran los productos -->
+
+        <div class="col-10 tex-center">
+          <section id="productos">
+            <div class="row">
+              <!-- CARGAR PRODUCTOS DE FORMA DINAMICA -->
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+<!--  -->
+
+<!-- TERMINO PRODUCTOS-->
     <section>
 
           <!--comienzo pie-->
@@ -338,9 +331,9 @@
                         CORPORATIVO
                     </div>
                     <ul class="list-group list-group-flush">
-                      <a href="/views/pregfrec.html"><li class="list-group-item">Preguntas Frecuentes</li></a>
-                      <a href="/views/cookies.html"><li class="list-group-item">Política de cookies</li></a>
-                      <a href="/views/acercade.html"><li class="list-group-item">Acerca de Nosotros</li></a>
+                        <a href="/views/pregfrec.html"><li class="list-group-item">Preguntas Frecuentes</li></a>
+                        <a href="/views/cookies.html"><li class="list-group-item">Política de cookies</li></a>
+                        <a href="/views/acercade.html"><li class="list-group-item">Acerca de Nosotros</li></a>
                     </ul>
                   </div>
             </div>
@@ -372,9 +365,9 @@
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"
   ></script>
-<!-- 
+
     <script src="../assets/js/productos.js"></script>
-    <script src="../assets/js/index.js"></script> -->
+    <script src="../assets/js/index.js"></script>
     <script src="../assets/js/login.js"></script>
     
   </body>
