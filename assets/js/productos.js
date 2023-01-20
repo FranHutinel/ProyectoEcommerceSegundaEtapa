@@ -67,45 +67,45 @@
   let productos = [
     {
       sku: "0001",
-      nombre: "Fifa 23 PS4",
+      nombre: "Pokemon Esmeralda",
       precio: 49990,
       descuento: 1000,
-      imagen: "./assets/img/fifa23.jpg"
+      imagen: "../assets/img/pokemonesmeralda.jpg"
     },
     {
       sku: "0002",
-      nombre: "God of war RAGNAROK PS4",
+      nombre: "Pokemon Amarillo",
       precio: 64990,
       descuento: 1000,
-      imagen: "./assets/img/godofwar.jpg"
+      imagen: "../assets/img/pokemonamarillo.jpg"
     },
     {
       sku: "0003",
-      nombre: "Pac-man and the ghostly adventures 2 XBOX 360",
+      nombre: "Pokemon Scarlet",
       precio: 29990,
       descuento: 1000,
-      imagen: "./assets/img/pacman.jpeg"
+      imagen: "../assets/img/pokemonscarlet.jpg"
     },
     {
       sku: "0004",
-      nombre: "Mario rabbids",
+      nombre: "Pokemon Violet",
       precio: 29990,
       descuento: 1000,
-      imagen: "./assets/img/mariorabbids.jpg"
+      imagen: "../assets/img/pokemonviolet.jpg"
     },
     {
       sku: "0005",
-      nombre: "Sim city PC",
+      nombre: "Pokemon Rojo",
       precio: 34990,
       descuento: 1000,
-      imagen: "./assets/img/cimcity.jpeg"
+      imagen: "../assets/img/pokemonrojo.jpg"
     },
     {
       sku: "0006",
-      nombre: "World of warcraft PC",
+      nombre: "Pokemon Azul",
       precio: 21990,
       descuento: 1000,
-      imagen: "./assets/img/warcraft.jpeg"
+      imagen: "../assets/img/pokemonazul.jpg"
     },
   
   ];

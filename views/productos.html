@@ -254,45 +254,46 @@
       </ul>
     </nav>
     
-    <!--COMIENZO PRODUCTOS-->
-
-    <!-- creamos un solo contenedor con bootstrap para aside y mostrar productos -->
-    <div class="container">
-      <!-- le indicamos que este debe ser mostrado en fila -->
-      <div class="row">
-        <!-- asignamos con col-2 el espacio que tendra el aside -->
-        <div class="col-2 tex-center">
-          <h3>Tienda</h3>
-          <img id="portada" src="../assets/img/aside.png" />
-      
+           <!--comienzo aside-->
+        <!-- creamos un solo contenedor con bootstrap para aside y mostrar productos -->
+        <div class="container">
+          <!-- le indicamos que este debe ser mostrado en fila -->
+          <div class="row">
+            <!-- asignamos con col-2 el espacio que tendra el aside -->
+            <div class="col-2 tex-center">
+              <h3>Tienda</h3>
+              <img id="portada" src="../assets/img/aside.png" />
           
-          <div>
-            <button class="btn btn-info">Leer más</button>
+              
+              <div>
+                <button class="btn btn-info">Leer más</button>
+              </div>
+
+          </br>
+
+              <img id="portada" src="../assets/img/publizq.png" />
+          
+              <div>
+                  <button class="btn btn-info">Leer más</button>
+                </div>
+
+            </div>
+            <!-- asignamos con col-10 el espacio que tendran los productos -->
+
+            <div class="col-10 tex-center">
+              <section id="productos">
+                <div class="row">
+                  <!-- CARGAR PRODUCTOS DE FORMA DINAMICA -->
+                </div>
+              </section>
+            </div>
           </div>
-
-      </br>
-
-          <img id="portada" src="../assets/img/publizq.png" />
-      
-          <div>
-              <button class="btn btn-info">Leer más</button>
-            </div>
-
         </div>
-        <!-- asignamos con col-10 el espacio que tendran los productos -->
+  <!--  -->
 
-        <div class="col-10 tex-center">
-          <section id="productos">
-            <div class="row">
-              <!-- CARGAR PRODUCTOS DE FORMA DINAMICA -->
-            </div>
-          </section>
-        </div>
-      </div>
-    </div>
-<!--  -->
+     <!--Productos-->
 
-<!-- TERMINO PRODUCTOS-->
+      <!--termino productos--> 
     <section>
 
           <!--comienzo pie-->
@@ -369,6 +370,6 @@
     <script src="../assets/js/productos.js"></script>
     <script src="../assets/js/index.js"></script>
     <script src="../assets/js/login.js"></script>
-    
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
   </body>
 </html>
