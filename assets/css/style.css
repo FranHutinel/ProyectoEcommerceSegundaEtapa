@@ -188,7 +188,6 @@
     color: rgb(8, 8, 8);
     margin-bottom: 30px;
     position: relative;
-    z-index: 1;
   }
   
   .overlay {

@@ -27,51 +27,10 @@ function cargarProductos(listadoProductos) {
                       <p class="card-text text-danger">Descuento: -  $ ${producto.descuento}</p>
                       <p class="card-text text-success">Precio final: $ ${producto.precio - producto.descuento}</p>
                       <a class="btn btn-primary" data-sku="${producto.sku}" onclick="addToCart('${producto.sku}')">Comprar</a>
-
+                      <button class="btn btn-primary" data-sku="${producto.sku}" onclick="viewDetails('${producto.sku}')">Detalles</button>
 
       
 
-                       <button type="button" class="mt-0 mx-0 btn btn-primary"
-                       data-bs-toggle="modal" data-bs-target="#detallesmodal">Detalles</button>
-                        
-
-                       
-                       <div class="modal" tabindex="-1" id="detallesmodal">
-                       <div class="modal-dialog">
-                       <div class="modal-content">
-
-
-                       <div class="modal-header">
-
-                       <h5 class="modal-title">${producto.nombre}</h5>
-                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-                       </div>
-
-                       <div class="modal-body">
-                      
-                       <img src="${producto.imagen}" class="card-img-top" alt="${producto.nombre
-                       }"> 
-                      
-                      <p class="card-text">${producto.sku}</p>
-                      <p class="card-text">Precio Normal: $ ${producto.precio}</p>
-                      <p class="card-text">${producto.descripcion}</p>
-                      <p class="card-text text-danger">Descuento: -  $ ${producto.descuento}</p>
-                      <p class="card-text text-success">Precio final: $ ${producto.precio - producto.descuento}</p>
-
-                       </div>
-
-
-                       <div class="modal-footer">
-                       
-                       <a class="btn btn-primary" data-sku="${producto.sku
-                       }" onclick="addToCart('${producto.sku}')">Comprar</a>
-
-                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-
-                      </div>
-                      </div>
-                      </div>
-                      </div>
        
                        
                      </div>
@@ -83,6 +42,36 @@ function cargarProductos(listadoProductos) {
   
     document.querySelector("#productos .row").innerHTML = acumulador;
   }
+
+  function viewDetails(codigo) {
+
+    //FindBy Codigo (SKU)
+    const response = productos.find(productoSel => productoSel.sku === codigo);
+  
+    let titulo = document.getElementById("titulo");
+    titulo.innerHTML = response.nombre;
+  
+    document.getElementById("imagen").src = response.imagen;
+  
+    let sku = document.getElementById("sku");
+    sku.innerHTML = response.sku;
+  
+    let precio = document.getElementById("precio");
+    precio.innerHTML = response.precio;
+  
+    let descripcion = document.getElementById("descripcion");
+    descripcion.innerHTML = response.descripcion;
+  
+    let descuento = document.getElementById("descuento");
+    descuento.innerHTML = response.descuento;
+  
+    let precioFinal = document.getElementById("precioFinal");
+    precioFinal.innerHTML = response.precio - response.descuento;
+  
+    const myModal = new bootstrap.Modal('#detallesmodal')
+    myModal.show()
+  }
+  
 
   function addToCart(sku) {
     let objProducto = {
